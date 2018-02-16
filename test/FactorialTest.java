@@ -2,12 +2,14 @@ package main.test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 
 import main.java.Factorial;
 
 class FactorialTest {
 	Factorial factorial = new Factorial();
+	
 	
 @Test
 	public void Testfact() {
