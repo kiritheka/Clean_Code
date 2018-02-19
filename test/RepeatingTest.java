@@ -19,7 +19,7 @@ class RepeatingTest {
         assertNotSame(67, Addition.sum(24, 6));
 	}
 
-@RepeatedTest(value = 4, name = "Odd CHECK {currentRepetition}/{totalRepetitions}")
+@RepeatedTest(value = 3, name = "Odd CHECK {currentRepetition}/{totalRepetitions}")
  public void testIsOdd() {
 	assertTrue(!MathUtil.isOdd(2));
 	assertTrue(!MathUtil.isOdd(0));

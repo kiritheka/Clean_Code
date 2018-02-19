@@ -20,18 +20,5 @@ class ParameterisedTest {
 @ValueSource(strings = {"name", "city", "state", "country"})
  void testWithValueSource(String values) {
 	assertNotNull(values);	
-}
-	
-
-	/*@Rule		
-	public ErrorCollector collector = new ErrorCollector();
-	
-void testWithValueSource() {
-try {
-		assertNull("dfj");
-	}
-	catch (Throwable t) {					
-        collector.addError(t);
-	}
-  }*/
+ }
 }
