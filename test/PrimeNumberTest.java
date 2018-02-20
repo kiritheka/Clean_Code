@@ -11,13 +11,13 @@ import main.java.PrimeNumber;
 
 class PrimeNumberTest {
 	PrimeNumber primeNumber = new PrimeNumber();
-	
-@Test
+
+	@Test
 	public void testValidate() {
-	  assertFalse(primeNumber.validate(8));
-	  assertTrue(primeNumber.validate(5));
-	  assertEquals(true, primeNumber.validate(19));
-	  assertNotNull(primeNumber);
-		
+		assertFalse(primeNumber.validate(8));
+		assertTrue(primeNumber.validate(5));
+		assertEquals(true, primeNumber.validate(19));
+		assertNotNull(primeNumber);
+
 	}
 }

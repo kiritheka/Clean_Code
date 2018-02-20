@@ -8,17 +8,16 @@ import org.junit.jupiter.params.provider.ValueSource;
 
 class ParameterisedTest {
 
-@Test	
- @ParameterizedTest
- @ValueSource(ints = { 1, 2, 3 ,5,9})
-	 void testWithValueSource(int argument) {
-	     assertNotNull(argument);
-	 }
+	@Test
+	@ParameterizedTest
+	@ValueSource(ints = { 1, 2, 3, 5, 9 })
+	void testWithValueSource(int argument) {
+		assertNotNull(argument);
+	}
 
-
-@ParameterizedTest
-@ValueSource(strings = {"name", "city", "state", "country"})
- void testWithValueSource(String values) {
-	assertNotNull(values);	
- }
+	@ParameterizedTest
+	@ValueSource(strings = { "name", "city", "state", "country" })
+	void testWithValueSource(String values) {
+		assertNotNull(values);
+	}
 }

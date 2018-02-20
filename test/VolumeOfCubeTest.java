@@ -8,14 +8,12 @@ import main.java.VolumeOfCube;
 
 class VolumeOfCubeTest {
 
-	VolumeOfCube voc = new VolumeOfCube();
-
-	@Test  
-	    public void testCalculateCube(){  
-	        assertEquals(216,voc.calculateCube(6));
-	        assertEquals(0,voc.calculateCube(0));
-	        assertNotSame(299,voc.calculateCube(3));
-	        assertEquals(0,voc.calculateCube(-6));
-	        assertTrue(voc.calculateCube(6) > 6);  
-	    } 
+	@Test
+	public void testCalculateCube() {
+		assertEquals(216, VolumeOfCube.calculateCube(6));
+		assertEquals(0, VolumeOfCube.calculateCube(0));
+		assertNotSame(299, VolumeOfCube.calculateCube(3));
+		assertEquals(0, VolumeOfCube.calculateCube(-6));
+		assertTrue(VolumeOfCube.calculateCube(6) > 6);
+	}
 }

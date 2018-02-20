@@ -10,15 +10,13 @@ import org.junit.jupiter.api.Test;
 import main.java.LeapYear;
 
 class LeapYearTest {
-	LeapYear leapYear = new LeapYear();
-	
+
 	@Test
 	public void testisLeapYear() {
-		  assertFalse(leapYear.isLeapYear(1995));
-		  assertTrue(leapYear.isLeapYear(2004));
-		  assertEquals(true, leapYear.isLeapYear(2012));
-		  assertFalse(leapYear.isLeapYear(0));
-		  assertFalse(leapYear.isLeapYear(-1994));	
+		assertFalse(LeapYear.isLeapYear(1995));
+		assertTrue(LeapYear.isLeapYear(2004));
+		assertEquals(true, LeapYear.isLeapYear(2012));
+		assertFalse(LeapYear.isLeapYear(0));
+		assertFalse(LeapYear.isLeapYear(-1994));
 	}
-
 }
